@@ -1,3 +1,26 @@
+:root {
+  --navbar-bg: #fff;
+  --navbar-color: #000;
+  --h1-text-color: #ee2727;
+  --search-bg: #242424;
+  --search-color: #ffffff;
+  --search-placeholder-color: #fff;
+  --background-color: #cac9c9;
+  --text-color: #000;
+}
+
+:root[theme="dark"] {
+  --navbar-bg: #000;
+  --navbar-color: #fff;
+  --h1-text-color: #fbff00;
+  --search-bg: #fff;
+  --search-color: #000000;
+  --search-placeholder-color: #222;
+  --background-color: #333; 
+  --text-color: #f7f1f1;
+}
+
+
 *,
 *::before,
 *::after {
@@ -19,7 +42,7 @@ body {
   font-style: normal;
   color: #000;
   line-height: normal;
-  background-color: rgb(238, 241, 255);
+  background-color: var(--background-color);
 }
 
 a,
@@ -58,7 +81,6 @@ h6 {
 .container{
   width: 100vw;
   height: 100vh;
-  background-color: #d4d4d4;
   transition: .5s;
 }
 

@@ -1,0 +1,68 @@
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-header {
+    margin-bottom: 20px;
+  }
+  
+  .about-header h1 {
+    font-size: 2.5rem;
+    color: var(--h1-text-color);
+  }
+  
+  .about-header p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+  }
+  
+  .about-info h2,
+  .about-values h2,
+  .about-team h2 {
+    font-size: 1.8rem;
+    color: var(--h1-text-color);
+    margin-bottom: 10px;
+  }
+  
+  .about-info p,
+  .about-values ul {
+    font-size: 1.1rem;
+    color: var(--text-color);
+  }
+  
+  .about-values ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about-values ul li {
+    margin-bottom: 10px;
+  }
+  
+  .about-values ul li strong {
+    font-weight: bold;
+  }
+  
+  .about-team {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .team-member p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+  }
+  

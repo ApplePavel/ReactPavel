@@ -1,109 +1,92 @@
-:root {
-    --navbar-bg-light: #fff;
-    --navbar-color-light: #000;
-    --h1-text-color-light: #ff7b00;
-    --search-bg-light: #242424;
-    --search-color-light: #fff;
-    --search-placeholder-color-light: #fff;
-  
-    --navbar-bg-dark: #000;
-    --navbar-color-dark: #fff;
-    --h1-text-color-dark: #fbff00;
-    --search-bg-dark: #fff;
-    --search-color-dark: #222;
-    --search-placeholder-color-dark: #222;
-  }
-  
   .navbar{
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: var(--navbar-bg-light);
-      color: var(--navbar-color-light);
-      padding: 15px 10%;
-      transition: .5s;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--navbar-bg);
+    color: var(--text-color);
+    padding: 15px 10%;
+    transition: .5s;
   }
   
-  .logo{
-      width: 150px;
-      cursor: pointer;
+  
+  
+  .navbar h1{
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
   }
   
-  .toggle-icon{
-      width: 60px;
-      cursor: pointer;
-      margin-left: 40px;
+  h1{
+    color: var(--text-color);
+  }
+
+  .h1-text{
+    color: var(--h1-text-color)
   }
   
   ul{
-      flex: 1; 
-      text-align: center; 
+    flex: 1; 
+    text-align: center; 
   }
   
   ul li{
-      display: inline-block;
-      margin: 10px 20px;
-      font-size: 18px;
-      cursor: pointer;
-      margin-left: 40px;
+    display: inline-block;
+    margin: 10px 20px;
+    cursor: pointer;
+    margin-left: 40px; 
+  }
+
+  ul li button{
+    color: var(--text-color);
+    font-size: 18px;
   }
   
   .search-box{
-      display: flex;
-      align-items: center;
-      background: var(--search-bg-light);
-      padding: 10px 20px;
-      border-radius: 40px;
+    display: flex;
+    align-items: center;
+    background: var(--search-bg);
+    padding: 10px 20px;
+    border-radius: 40px;
   }
   
   .search-box input{
-      padding: 5px;
-      background-color:transparent;
-      border: none;
-      outline: 0;
-      color: var(--search-color-light);
-      font-size: 16px;
-      max-width: 200px;
+    padding: 5px;
+    background-color:transparent;
+    border: none;
+    outline: 0;
+    color: var(--search-color);
+    font-size: 16px;
+    max-width: 200px;
   }
   
   .search-box input::placeholder{
-      color: var(--search-placeholder-color-light);
+    color: var(--search-placeholder-color);
   }
   
   .search-box img{
-      width: 20px;
-      cursor: pointer;
+    width: 20px;
+    cursor: pointer;
   }
   
-  .navbar h1{
-      font-size: 24px;
-      font-weight: 700px;
-      cursor: pointer;
+  .toggle-icon{
+    width: 60px;
+    cursor: pointer;
+    margin: 0 10px;
   }
   
-  .h1-text{
-      color: var(--h1-text-color-light);
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
   }
   
-  .dark .navbar{
-      background: var(--navbar-bg-dark);
-      color: var(--navbar-color-dark);
+  button:focus-visible {
+    border: 1px solid rgb(209, 14, 0);
   }
   
-  .dark .h1-text{
-      color: var(--h1-text-color-dark);
+  button:active {
+    border: none;
   }
   
-  .dark .search-box{
-      background: var(--search-bg-dark);
-  }
-  
-  .dark .search-box input{
-      color: var(--search-color-dark);
-  }
-  
-  .dark .search-box input::placeholder{
-      color: var(--search-placeholder-color-dark);
-  }
   
